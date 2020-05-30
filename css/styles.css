@@ -1,51 +1,83 @@
-*{
-    font-family: Helvetica, sans-serif;
-    box-sizing:border-box;
-    margin: 0;
-    padding: 0;
-}
-h1{
-    margin-top:30px;
-    margin-bottom:30px;
-    font-size: 175%;
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: 'Oxygen', sans-serif;
+  }
+  
+  /** HEADER **/
+  #header-nav {
+    background-color: #f6b319;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #logo-img {
+    background: url('../images/restaurant-logo_large.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+  }
+  
+  .navbar-brand{
+      padding:25px;
+  }
+
+  .navbar-brand h1 { /* Restaurant name */
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+
+  .navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+  }
+
+  .navbar-brand p { /* Kosher cert */
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+  }
+  .navbar-brand p span { /* Star-K */
+    vertical-align: middle;
+  }
+  #nav-list {
     text-align: center;
+  }
+  #nav-list a{
+    color: #951C49;
+  }
+  #nav-list li:hover {
+    background: #E7E7E7;
+    padding:5px;
+  }
+  #nav-list a {
+    font-size: 1.5em;
+  }
+  .nav-item{
+    padding:5px;
+  }
+  #phone a { /* Phone number */
+    text-align: right;
+    padding-bottom: 0;
+  }
+  #phone div { /* We Deliver */
+    color: #557c3e;
+    text-align: right;
+  }
+  a:hover{
+    text-decoration: none;
 }
-h2{
-    width:33%;
-    float:right;
-    font-size:125%;
-    text-align:center;
-    border:1px solid black;
-}
-p{
-    float:left;
-    padding:10px;
-}
-.row{
-    width:100%;
-}
-.box{
-    border:2px solid white;
-    float:left;
-    background-color: grey;
-}
-#chicken{
-    background-color: pink;
-}
-#beef{
-    background-color: rgb(156, 65, 65);
-    color:white;
-}
-#sushi{
-    background-color: rgb(224, 224, 13);
-}
-@media (min-width:992px){
-    .col-lg-4{float:left;width:33.33%;}
-}
-@media (min-width:768px) and (max-width:991px){
-    .col-md-6{float:left;width:50%;}
-    .col-md-12{float:left;width:100%;}
-}
-@media (max-width:767px){
-    .col-sm-12{float:left;width:100%;}
+#navbarSupportedContent{
+  margin-top:-50px;
+  margin-left:50px;
+  margin-right:0px;
+  padding-right:0px;
 }
