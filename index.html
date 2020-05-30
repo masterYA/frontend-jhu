@@ -6,84 +6,91 @@
         <title>YASH'S COOL WEBSITE</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
+
+        <!--for font family lora-->
         <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+        
+        <!--for font family oxygen-->
         <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    </head>
+
+        <!--for FONT AWESOME ICONS
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        -->
+        <script src="https://kit.fontawesome.com/d37e0d03e3.js" crossorigin="anonymous"></script>
+        </head>
 
     <body>
 
         <header>
-            <nav id="header-nav" class="navbar navbar-default">
-            <!--whole navigation bar wrapped in a div-->
-              <div class="container">
-                
-                <!--navbar-light id for hamburger bar, navbar-expand-lg is for disaapearing it when expanded-->
-                <div class="navbar-header navbar-expand-lg navbar-light">
-
-                    <!--Brand logo-->
-                    <a href="index.html" class="float-left d-none d-md-block">
-                        <div id="logo-img" alt="Logo Image"></div>
-                    </a>
-                
-                    <!--Brand name (wrapeed in a div with id navbar-brand to style usig css-->
-                    <div class="navbar-brand">
-                        <a href="index.html"><h1>Master YA's Bistro</h1></a>
-                        <p>
-                            <img src="/images/star-k-logo.png" alt="Kosher certification">
-                            <span>ISO Certified</span>
-                        </p>
-                    </div>
+            <nav id="header-nav" class="navbar navbar-expand-lg" >
+                <!--whole navigation bar wrapped in a div-->
+                <div class="container">
                     
-                    <!--describe button attributes-->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <!--navbar-light id for hamburger bar, navbar-expand-lg is for disaapearing it when expanded-->
+                    <div class="navbar-header  navbar-expand-lg  navbar-light">
+
+                        <!--Brand logo-->
+                        <a href="index.html" class="float-left d-none d-md-block">
+                            <div id="logo-img" alt="Logo Image"></div>
+                        </a>
+                    
+                        <!--Brand name (wrapeed in a div with id navbar-brand to style usig css-->
+                        <div class="navbar-brand">
+                            <a href="index.html"><h1>Master YA's Bistro</h1></a>
+                            <p>
+                                <img src="/images/star-k-logo.png" alt="Kosher certification">
+                                <span>ISO Certified</span>
+                            </p>
+                        </div>
+                        
+                        <!--describe button attributes-->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
 
                     <!--hamburgerbar-->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
+                    <div id="navbarSupportedContent" class="collapse navbar-collapse" >
+                        <!--navbar-nav class is treating the following list as subcomponent of the navbar header-->
+                        <ul id="nav-list" class="navbar-nav mr-auto">
+
                             <li class="nav-item active">
-                                <a class="nav-link" href="https://www.google.co.in/">What is this behaviour pooja?</a>
+                                <a href="menu-categories.html">
+                                    <span class="fa fa-cutlery"></span>
+                                    <br class="d-none d-md-block">
+                                    <span>Menu</span>
+                                </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="https://www.youtube.com/watch?v=azsJnaYknPw">I kicked it by mistake</a>
+                                <a href="#">
+                                    <span class="fa fa-info-circle"></span>
+                                    <br class="d-none d-md-block"> 
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">
+                                    <span class="fa fa-medal"></span>
+                                    <br class="d-none d-md-block"> 
+                                    <span>Awards</span>
+                                </a>
                             </li>
                             
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.youtube.com/watch?v=azsJnaYknPw">You can't kick it by mistake</a>
-                            </li>
-
-                            <!--Dropdown-->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="https://github.com/masterYA" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Then pick it up if it bothers you
+                            <li id="phone" class="d-none d-sm-block nav-item">
+                                <a href="tel:+916395393524">
+                                    <span>+91-6395-393-524</span>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="#">No you will pick it up</a>
-                                  <a class="dropdown-item" href="#">You dont tell me what to do</a>
-                                  <a class="dropdown-item" href="#">I can tell you what to do</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">YOU DO NOT TELL ME WHAT TO DO!</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Or what? Are you gonna hit me?</a>
-                                  <a class="dropdown-item" href="#">Do you want it ? Coz you're asking for it. You're dying for it.</a>
-                                </div>
+                                <div>* Call us</div>
                             </li>
-
                         </ul>
                     </div>
-        
-
-                </div>
+                </diV>
             </nav>
-        
-          </header>
+        </header>
 
         <script src="js/jquery-3.5.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/script.js"></script>
     </body>
-
-
 </html>

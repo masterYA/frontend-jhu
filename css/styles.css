@@ -48,3 +48,36 @@ body {
   .navbar-brand p span { /* Star-K */
     vertical-align: middle;
   }
+  #nav-list {
+    text-align: center;
+  }
+  #nav-list a{
+    color: #951C49;
+  }
+  #nav-list li:hover {
+    background: #E7E7E7;
+    padding:5px;
+  }
+  #nav-list a {
+    font-size: 1.5em;
+  }
+  .nav-item{
+    padding:5px;
+  }
+  #phone a { /* Phone number */
+    text-align: right;
+    padding-bottom: 0;
+  }
+  #phone div { /* We Deliver */
+    color: #557c3e;
+    text-align: right;
+  }
+  a:hover{
+    text-decoration: none;
+}
+#navbarSupportedContent{
+  margin-top:-50px;
+  margin-left:50px;
+  margin-right:0px;
+  padding-right:0px;
+}
