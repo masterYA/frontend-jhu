@@ -3,15 +3,20 @@ body {
     color: #fff;
     background-color: #61122f;
     font-family: 'Oxygen', sans-serif;
-  }
-  
+}
   /** HEADER **/
   #header-nav {
     background-color: #f6b319;
     border-radius: 0;
     border: 0;
+    padding:0px;
   }
-  
+  .container-fluid{
+    padding:0px;
+    position: relative;
+    margin-left: 60px;
+    margin-right:60px;
+  }
   #logo-img {
     background: url('../images/restaurant-logo_large.png') no-repeat;
     width: 150px;
@@ -21,6 +26,15 @@ body {
   
   .navbar-brand{
       padding:25px;
+  }
+ .navbar-header .navbar-brand{
+   padding:0px;
+   margin:0px;
+   padding-top:20px;
+ }
+  .navbar-brand img{
+    width:30px;
+    height:30px;
   }
 
   .navbar-brand h1 { /* Restaurant name */
@@ -50,6 +64,8 @@ body {
   }
   #nav-list {
     text-align: center;
+    position: fixed;
+    right: 75px;
   }
   #nav-list a{
     color: #951C49;
@@ -74,10 +90,50 @@ body {
   }
   a:hover{
     text-decoration: none;
+  }
+  #navbarSupportedContent{
+    margin-left:50px;
+    margin-right:0px;
+    padding-right:0px;
+  }
+  .navbar-header button.navbar-toggler{
+    border: 2px solid #61122f;
+    background-color: blanchedalmond;
+    margin-left: 250px;
+    position: fixed;
+    right: 75px;
+    top:30px;
+  }
+
+  /********** Large devices only **********/
+@media (min-width: 1200px) {
+
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
 }
-#navbarSupportedContent{
-  margin-top:-50px;
-  margin-left:50px;
-  margin-right:0px;
-  padding-right:0px;
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
 }
